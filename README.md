@@ -1,20 +1,20 @@
-##Stock Price Prediction Project
+## Stock Price Prediction Project
 
-#Overview
+# Overview
 
     This project focuses on predicting stock prices using machine learning techniques.
     The process encompasses data cleaning, exploratory data analysis (EDA), feature engineering,
     model training, and deployment through a Streamlit application.
 
-#Project Workflow
+# Project Workflow
 
-#1.Data Loading and Initial Inspection:
+# 1.Data Loading and Initial Inspection:
 
 -Loaded the dataset into VS Code.
 
 -Inspected data types and checked for missing values using df.info() and isnull().sum().
  
-#2.Data Cleaning:
+# 2.Data Cleaning:
 
 -Removed empty columns that didn't contribute meaningful 
  information.
@@ -24,40 +24,40 @@
 -For columns with missing values, filled them with the mean of the 
  respective columns using df[column].fillna(df[column].mean()).
 
-#3.Categorical Data Handling:
+# 3.Categorical Data Handling:
 
 -Identified categorical columns by examining unique values.
 
 -Applied one-hot encoding to convert categorical variables into 
  numerical format.
 
-#4.Feature Selection:
+# 4.Feature Selection:
 
 -Analyzed correlations between features using a heatmap.
 
 -Removed 11 features that showed low significance in prediction 
  accuracy.
 
-#5.Exploratory Data Analysis (EDA):
+# 5.Exploratory Data Analysis (EDA):
 
 -Visualized data distributions and identified outliers using line 
  charts, box plots, histograms, and scatter plots.
 
-#6.Outlier Treatment:
+# 6.Outlier Treatment:
 
 -Addressed outliers using Interquartile Range (IQR) and Z-score 
  methods.
 
 -Verified the removal of outliers by re-plotting box plots.
 
-#7.Data Preparation:
+# 7.Data Preparation:
 
 -Reset the index and saved the cleaned dataset as cleaned_data.csv.
 
 -Converted the 'Date' column to Unix timestamp format for modeling 
  purposes.
 
-#8.Model Development:
+# 8.Model Development:
 
 -Split the data into training and testing sets.
 
@@ -80,7 +80,7 @@
 -Identified Random Forest as the best-performing model based on 
  test RMSE.
 
-#9.Hyperparameter Tuning:
+# 9.Hyperparameter Tuning:
 
 -Conducted Grid Search to optimize model parameters.
 
@@ -93,7 +93,7 @@
  RMSE: 7.8472
  R² Score: 0.9873
 
-#10.Model Deployment:
+# 10.Model Deployment:
 
 -Saved the optimized model and scaler for deployment.
 
@@ -107,9 +107,9 @@
 
 -Display the predicted stock close price to the user.
 
-#Conclusion
+# Conclusion
 
-This project demonstrates a comprehensive approach to stock price prediction, 
-from data preprocessing and exploratory analysis to model development and deployment. 
-The Streamlit application provides an interactive platform for users to input relevant features 
-and receive predicted stock prices based on the trained Random Forest model.
+    This project demonstrates a comprehensive approach to stock price prediction, 
+    from data preprocessing and exploratory analysis to model development and deployment. 
+    The Streamlit application provides an interactive platform for users to input relevant features 
+    and receive predicted stock prices based on the trained Random Forest model.
